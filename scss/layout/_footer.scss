@@ -1,0 +1,22 @@
+footer{
+    @include flex(row, space-between, center, none);
+    height: 7.25rem;
+    background-color: #5F6F52;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    div:nth-child(1){
+        @include flex(row,space-evenly,center,.625rem);
+    }
+    div:nth-child(3){
+        @include flex(column, center, center, .3125rem);
+        form{
+            gap: .3125rem;
+        }
+            div{
+                @include flex(row,center,center,.3125rem);
+            }
+
+    }
+}
+
+

@@ -1,0 +1,21 @@
+
+//utilities
+
+@import "./utilities/mixins";
+@import "./utilities/variables";
+
+
+//base y layouts
+
+@import "./base/reset";
+@import "./base/font";
+@import "./base/fondo2";
+
+@import "./layout/header";
+@import "./layout/mainindex";
+@import "./layout/footer";
+@import "./layout/tienda";
+@import "./layout/nosotros";
+
+//componentes
+@import "./components/cards";

@@ -1,0 +1,39 @@
+.header{
+    background-color: $color2;
+    height: 5rem;
+    width: 100%;
+    @include flex(row, space-between, center, none);
+    div{
+        padding-left: 3.125rem;
+        a{
+            font-size: 2.5rem;
+            color: black;
+            letter-spacing: .5rem;
+            font-weight: 400;
+            text-decoration: none ;
+            
+        }
+    }
+    nav button{
+        display: none;
+    }
+    ul{
+        @include flex(row, space-around, center, 1.875rem);
+        padding-right: 1.875rem;
+        li{
+            list-style: none;
+            
+            a{
+            list-style: none;
+            text-decoration: none;
+            font-size: 20px;
+            color:black;
+            &:hover{
+                border-bottom: 2px solid black;
+                transition: 0.5;
+            }
+            }
+            }
+    }
+    
+}

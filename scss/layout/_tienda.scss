@@ -1,0 +1,24 @@
+
+.tienda{
+    section:nth-child(3){
+        @include flex(row, end,center,none);
+        padding-right: 8rem;
+        button{
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            font-size: 80%;
+            background-color: #292A2E;
+            color: white;
+            padding: 10px 10px;
+            border: .25rem solid #5F6F52;
+            border-radius: .25rem;
+            height: 2.9375rem;
+            width: 6.25rem; 
+            &:hover{
+                color: rgb(154, 216, 115);
+                }
+            }
+        }
+
+}
+
