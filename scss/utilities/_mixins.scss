@@ -16,10 +16,12 @@
 }
 
 // Mixin para organizar elementos dentro del grid
-@mixin grid-areas($col, $row, $justify, $align){
+@mixin grid-areas($col1, $col2, $row1, $row2, $justify, $align){
     display: grid;
-    grid-column: $col;
-    grid-row: $row;
+    grid-column-start: $col1;
+    grid-column-end: $col2;
+    grid-row-start: $row1;
+    grid-row-end: $row2;
     justify-content: $justify;
     align-items: $align;
 }

@@ -8,25 +8,32 @@
         height: 18.75rem;
         padding: 1.25rem 0rem;
         box-shadow: .1875rem .1875rem .1875rem #00000056;
-        border-radius: .25rem;
+        border-radius: .25rem; 
+        }
         div img{
             width: 7rem;
             height: 9.375rem;
             border-radius: 10%;
             padding-top: .625rem;
             
+            
+        }
+        div img:hover{
+            transform: scale(1.1);
+            transition: scale 2s ease 2ms, transform 2s ease 2ms;
         }
         div:nth-child(2){
             @include flex(column,center,center,noce);
             h4{
                 font-size: 100%;
-                font-weight: bold;
+                font-weight: normal;
             }
             h5{
                 font-size: 100%;
+                font-weight: normal;
             }        
             p{
-                font-weight: bold;
+                font-weight: normal;
             }
             button{
                 text-decoration: none;
@@ -34,7 +41,7 @@
                 font-size: 80%;
                 background-color: #292A2E;
                 color: white;
-                padding: 10px 10px;
+                margin-top: 10px;
                 border: .25rem solid #5F6F52;
                 border-radius: .25rem;
                 height: 2.9375rem;
@@ -42,10 +49,11 @@
                 margin-bottom: .625rem;
                 &:hover{
                 color: rgb(154, 216, 115);
+                
                 }
             }
         }
     }
     
 
-}
+

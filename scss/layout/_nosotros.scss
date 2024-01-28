@@ -2,13 +2,15 @@
     @include grid(repeat(8, 1fr), repeat(5, 1fr), center, none);
     height: 100%;
     width: 100%;
+    
 
     h3:nth-child(1){
-        @include grid-areas(2 / 5, 2 / 3, center, center);
+        @include grid-areas(2 , 5, 2 , 3, center, center);
         height: 100%;
         width: 100%;
         text-decoration: none;
-        font-size: 120%;
+        font-size: 100%;
+        font-weight: normal;
         order: 2;
         text-align: center;
         margin-bottom: 0;
@@ -16,31 +18,35 @@
     }
 
     h3:nth-child(2){
-        @include grid-areas(2 / 5, 3 / 5, center, center);
+        @include grid-areas(2 , 5, 3 , 5, center, center);
         height: 100%;
         width: 100%;
         text-decoration: none;
-        font-size: 120%;
+        font-size: 100%;
+        font-weight: normal;
         order: 2;
         text-align: center;
         margin-bottom: 0;
-        padding: 2.5rem .9375rem .9375rem .9375rem;
+        padding: .9375rem .9375rem .9375rem .9375rem;
     }
 
     img{
-        @include grid-areas(5 / 8, 2 / 5, center, center);
-        height: 23.625rem;
-        width: 17rem;
+        @include grid-areas(5 , 8, 2 , 5, center, center);
+        height: 80%;
+        width: 60%;
         order: 2;
-        align-self: center; 
+        margin: 2.5rem 5rem 2.5rem 5rem;
+        
     }
-}
-    /*
+
+    
     section{
-        @include grid-areas( 2 / 8, 2 / 5, center, center);
-            background-color: #ffffffbe;
+        @include grid-areas( 2 , 8, 2 , 5, center, center);
+            background-color: #ffffff92;
             order: 1;
             height: 100%;
             width: 100%;
-        }*/
+        }
+}
+
 

@@ -7,3 +7,15 @@
     width: 100%;
     padding-top: 0;
 }
+
+
+@media(max-width:768px){
+    .tienda{
+        background-size: 190%;
+        height: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 3.75rem;
+    }
+    
+}

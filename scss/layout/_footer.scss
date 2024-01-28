@@ -17,6 +17,70 @@ footer{
             }
 
     }
+    
+  
 }
 
+@media(max-width:768px){
+    footer{
+        height: 100%;
+        @include grid(repeat(3, 1fr), repeat(2, 1fr), center, center);
+        
+        div:nth-child(1){
+            @include grid-areas(1, 2, 2, 3, space-evenly, center);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            grid: flex;
+            flex-direction: row;
+        }
+        div:nth-child(2){
+            @include grid-areas(1, 4, 1, 2, center, center);
+        }
+        div:nth-child(3){
+        @include grid-areas(2, 4, 2, 3, center, center);
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 10px ;
+        gap: 0;
+        }
+    }
+}
 
+@media(max-width:320px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: .625rem;
+        padding: 0;
+        div:nth-child(1){
+            @include flex(row, space-evenly,center, none);
+            margin-top: .625rem;
+            
+        }
+        div:nth-child(2){
+            justify-content: center;
+            justify-self: center;
+            h3{
+                text-align: center;
+                font-size: 90%;
+            }
+        }
+        div:nth-child(3){
+            @include flex(column, center,center, none);
+            font-size: 90%;
+            gap: .3125rem;
+            div{
+                img{
+                    height: .625rem;
+                    width: .625rem;
+                }
+                h5{
+                    font-weight: normal;
+                    font-size: 80%;
+                }
+            }
+        }
+    
+    }
+}

@@ -1,5 +1,10 @@
 
 .tienda{
+    section:nth-child(1){
+        display: flex;
+        padding-left: 130px;
+        padding-top: 3.75rem;
+    }
     section:nth-child(3){
         @include flex(row, end,center,none);
         padding-right: 8rem;
@@ -22,3 +27,13 @@
 
 }
 
+@media(max-width:768px){
+    .tienda{
+        background-size: 190%;
+        height: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 3.75rem;
+    }
+    
+}

@@ -37,3 +37,35 @@
         color: white;  
     }
 }
+
+@media(max-width:321px){
+    .principal{
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 25rem;
+        width: 100%;
+        section{
+            @include flex(column, center, end, none);
+            padding-right: 20px;
+            div{
+            height: 6.0625rem;
+            width: 6.25rem;
+            padding-bottom: 0;
+            margin-right: 0;
+            h1{
+                font-size: 1.125rem;
+            }
+        
+            }
+        button{
+            height: 1.875rem;
+            width: 6rem;
+            font-size: .75rem;
+            padding: 0;
+            margin-right: 0;
+        
+            }
+        }
+    }
+}
