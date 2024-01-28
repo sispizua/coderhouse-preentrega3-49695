@@ -47,7 +47,7 @@ footer{
     }
 }
 
-@media(max-width:320px){
+@media(max-width:391px){
     footer{
         display: flex;
         flex-direction: column;
@@ -67,7 +67,7 @@ footer{
             }
         }
         div:nth-child(3){
-            @include flex(column, center,center, none);
+            @include flex(column, center, start, none);
             font-size: 90%;
             gap: .3125rem;
             div{

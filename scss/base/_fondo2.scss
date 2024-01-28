@@ -8,14 +8,13 @@
     padding-top: 0;
 }
 
-
 @media(max-width:768px){
-    .tienda{
-        background-size: 190%;
+    .fondo-secundario{
         height: 100%;
         background-size: cover;
         background-attachment: fixed;
-        padding-top: 3.75rem;
+        background-position: center;
+        padding-top: 0;
     }
     
 }

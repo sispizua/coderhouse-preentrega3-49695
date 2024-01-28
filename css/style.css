@@ -21,12 +21,12 @@ font-family: 'Poppins', sans-serif;
   padding-top: 0; }
 
 @media (max-width: 768px) {
-  .tienda {
-    background-size: 190%;
+  .fondo-secundario {
     height: 100%;
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 3.75rem; } }
+    background-position: center;
+    padding-top: 0; } }
 
 .header {
   background-color: #5F6F52;
@@ -76,9 +76,9 @@ font-family: 'Poppins', sans-serif;
     .header nav ul li a {
       font-size: 1rem; } }
 
-@media (max-width: 321px) {
+@media (max-width: 391px) {
   .header {
-    height: 3.125rem;
+    height: 2.5rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -128,7 +128,7 @@ font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: white; }
 
-@media (max-width: 321px) {
+@media (max-width: 391px) {
   .principal {
     background-position: center;
     background-size: 100%;
@@ -229,7 +229,7 @@ footer {
       padding-bottom: 10px;
       gap: 0; } }
 
-@media (max-width: 320px) {
+@media (max-width: 391px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -252,7 +252,7 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: start;
       gap: none;
       font-size: 90%;
       gap: .3125rem; }
@@ -266,7 +266,7 @@ footer {
 .tienda section:nth-child(1) {
   display: flex;
   padding-left: 130px;
-  padding-top: 3.75rem; }
+  padding-top: 2.5rem; }
 
 .tienda section:nth-child(3) {
   display: flex;
@@ -290,12 +290,13 @@ footer {
       color: #9ad873; }
 
 @media (max-width: 768px) {
-  .tienda {
-    background-size: 190%;
-    height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 3.75rem; } }
+  .tienda section:nth-child(1) {
+    justify-content: center;
+    padding-left: 0;
+    padding-bottom: 10px; }
+  .tienda section:nth-child(3) {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem; } }
 
 .nosotros {
   display: grid;
@@ -371,51 +372,124 @@ footer {
   align-items: center;
   gap: none;
   padding: 3rem 6rem 3rem 6rem; }
-  .cards .card {
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3125rem;
+  background-color: #A9B388;
+  width: 12.5rem;
+  height: 18.75rem;
+  padding: 1.25rem 0rem;
+  box-shadow: .1875rem .1875rem .1875rem #00000056;
+  border-radius: .25rem; }
+
+.img-card img {
+  width: 7rem;
+  height: 9.375rem;
+  border-radius: 10%;
+  margin-top: .625rem;
+  margin-right: .625rem; }
+
+.img-card img:hover {
+  transform: scale(1.1);
+  transition: scale 2s ease 2ms, transform 2s ease 2ms; }
+
+div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: noce; }
+  div:nth-child(2) h4 {
+    font-size: 100%;
+    font-weight: normal;
+    width: 180px;
+    text-align: center; }
+  div:nth-child(2) h5 {
+    font-size: 100%;
+    font-weight: normal; }
+  div:nth-child(2) p {
+    font-weight: normal; }
+  div:nth-child(2) button {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80%;
+    background-color: #292A2E;
+    color: white;
+    margin-top: 10px;
+    border: .25rem solid #5F6F52;
+    border-radius: .25rem;
+    height: 2.9375rem;
+    width: 6.25rem;
+    margin-bottom: .625rem; }
+    div:nth-child(2) button:hover {
+      color: #9ad873; }
+
+@media (max-width: 768px) {
+  .cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.3125rem;
-    background-color: #A9B388;
-    width: 12.5rem;
-    height: 18.75rem;
-    padding: 1.25rem 0rem;
-    box-shadow: .1875rem .1875rem .1875rem #00000056;
-    border-radius: .25rem; }
-  .cards div img {
-    width: 7rem;
-    height: 9.375rem;
-    border-radius: 10%;
-    padding-top: .625rem; }
-  .cards div img:hover {
-    transform: scale(1.1);
-    transition: scale 2s ease 2ms, transform 2s ease 2ms; }
-  .cards div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: noce; }
-    .cards div:nth-child(2) h4 {
-      font-size: 100%;
-      font-weight: normal; }
-    .cards div:nth-child(2) h5 {
-      font-size: 100%;
-      font-weight: normal; }
-    .cards div:nth-child(2) p {
-      font-weight: normal; }
-    .cards div:nth-child(2) button {
-      text-decoration: none;
-      font-family: 'Poppins', sans-serif;
-      font-size: 80%;
-      background-color: #292A2E;
-      color: white;
-      margin-top: 10px;
-      border: .25rem solid #5F6F52;
-      border-radius: .25rem;
-      height: 2.9375rem;
-      width: 6.25rem;
-      margin-bottom: .625rem; }
-      .cards div:nth-child(2) button:hover {
-        color: #9ad873; }
+    gap: 3.125rem;
+    padding-top: 2.5rem;
+    padding-left: 7.5rem;
+    padding: 0 0 0 0; }
+    .cards .card {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0.3125rem;
+      height: 12.5rem;
+      width: 21.875rem; }
+  .ver-mas {
+    padding-bottom: 2.5rem; } }
+
+@media (max-width: 391px) {
+  .card {
+    width: 150px;
+    height: 200px;
+    padding: 1.25rem 0rem; }
+    .card .img-card img {
+      width: 5rem;
+      height: 6.25rem;
+      border-radius: 10%;
+      margin-top: .625rem;
+      margin-right: .625rem; }
+    .card .img-card img:hover {
+      transform: scale(1.1);
+      transition: scale 2s ease 2ms, transform 2s ease 2ms; }
+    .card div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: noce; }
+      .card div:nth-child(2) h4 {
+        font-size: 100%;
+        font-weight: normal;
+        width: 180px;
+        text-align: center; }
+      .card div:nth-child(2) h5 {
+        font-size: 100%;
+        font-weight: normal; }
+      .card div:nth-child(2) p {
+        font-weight: normal; }
+      .card div:nth-child(2) button {
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 80%;
+        background-color: #292A2E;
+        color: white;
+        margin-top: 10px;
+        border: .25rem solid #5F6F52;
+        border-radius: .25rem;
+        height: 2.9375rem;
+        width: 6.25rem;
+        margin-bottom: .625rem; }
+        .card div:nth-child(2) button:hover {
+          color: #9ad873; } }
