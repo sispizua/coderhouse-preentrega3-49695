@@ -1,5 +1,5 @@
 .nosotros {
-    @include grid(repeat(8, 1fr), repeat(5, 1fr), center, none);
+    @include grid(repeat(7, 1fr), repeat(4, 1fr), center, none);
     height: 100%;
     width: 100%;
     
@@ -18,8 +18,8 @@
     }
 
     h3:nth-child(2){
-        @include grid-areas(2 , 5, 3 , 5, center, center);
-        height: 100%;
+        @include grid-areas(2 , 5, 3 , 4, center, center);
+        height: 12.5rem;
         width: 100%;
         text-decoration: none;
         font-size: 100%;
@@ -31,22 +31,68 @@
     }
 
     img{
-        @include grid-areas(5 , 8, 2 , 5, center, center);
-        height: 80%;
-        width: 60%;
+        @include grid-areas(5 , 7, 2 , 4, center, center);
+        height: 23.125rem;
+        width: 18.125rem;
         order: 2;
-        margin: 2.5rem 5rem 2.5rem 5rem;
+        align-self: center;
+        justify-self: center;
+        
         
     }
 
     
     section{
-        @include grid-areas( 2 , 8, 2 , 5, center, center);
+        @include grid-areas( 2 , 7, 2 , 4, center, center);
             background-color: #ffffff92;
             order: 1;
             height: 100%;
             width: 100%;
         }
 }
+
+@media (max-width:769px){
+    .nosotros{
+        @include grid((0.3fr 1fr 0.3fr),(40px 380px 380px 400px 40px), center, none);
+    height: 100%;
+    width: 100%;
+    h3:nth-child(1){
+        @include grid-areas(2 , 3, 2 , 3, center, center);
+        height: 80%;
+        padding: 0 .9375rem 0 .9375rem;
+    }
+    h3:nth-child(2){
+        @include grid-areas(2 , 3, 3 , 4, center, center);
+        height: 80%;
+        padding: 0 .9375rem 0 .9375rem;
+    }
+    img{
+        @include grid-areas(2 , 3, 4, 5, center, center);
+        padding-bottom: 1.875rem;
+    }
+    section{
+        @include grid-areas(2, 3, 2 , 5, center, center);
+        
+    }
+    }
+}
+@media (max-width:391px){
+    .nosotros{
+        h3:nth-child(1){
+            height: 100%;
+            width: 18.75rem;
+        }
+        h3:nth-child(2){
+            height: 100%;
+        }
+        img{
+            height: 19.125rem;
+            width: 15rem;
+            padding: 0 20px 0 20px;
+        }
+    }
+
+}
+
 
 

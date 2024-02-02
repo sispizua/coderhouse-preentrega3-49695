@@ -1,0 +1,30 @@
+.ubicacion{
+    @include grid(repeat(4, 1fr), repeat(4, 1fr), center, center);
+    height: 100%;
+    width: 100%;
+    section:nth-child(1){
+        @include grid-areas(2, 4, 2, 3, center, center);
+        height: 100%;
+        width: 100%;
+        order: 2;
+    }
+    section:nth-child(2){
+        @include grid-areas(2, 3, 3, 4, center, center);
+        height: 100%;
+        width: 100%;
+        order: 2;
+    }
+    section:nth-child(3){
+        @include grid-areas(3, 4, 3, 4, center, center);
+        height: 100%;
+        width: 100%;
+        order: 2;
+    }
+    section:nth-child(4){
+        @include grid-areas(2, 4, 2, 4, center, center);
+        height: 100%;
+        width: 100%;
+        order: 1;
+        background-color: #ffffff92;
+    }
+}
