@@ -9,16 +9,32 @@
         order: 2;
     }
     section:nth-child(2){
-        @include grid-areas(2, 3, 3, 4, center, center);
+        @include grid-areas(2, 3, 3, 4, center, space-evenly);
         height: 100%;
         width: 100%;
         order: 2;
+        justify-items: center;
+        h5{
+            font-weight: 500;
+            height: 30px;
+        }
     }
     section:nth-child(3){
         @include grid-areas(3, 4, 3, 4, center, center);
-        height: 100%;
-        width: 100%;
+        height: 350px;
+        width: 350px;
         order: 2;
+        margin-right: 1.875rem;
+        margin-bottom: 1.875rem;
+        
+        
+        
+        iframe{
+            height: 350px;
+            width: 350px;
+            
+        }
+        
     }
     section:nth-child(4){
         @include grid-areas(2, 4, 2, 4, center, center);
@@ -27,4 +43,87 @@
         order: 1;
         background-color: #ffffff92;
     }
+}
+@media(max-width:769px){
+    .ubicacion{
+        @include grid((84px 600px 84px),(40px 80px 380px 400px 40px), center, none);
+        height: 100%;
+        width: 100%;
+        section:nth-child(1){
+            @include grid-areas(2, 3, 2, 3, center, center);
+            height: 100%;
+            width: 100%;
+        }
+        section:nth-child(2){
+            @include grid-areas(2, 3, 3, 4, center, space-evenly);
+            height: 100%;
+            width: 100%;
+            justify-items: center;
+            h5{
+                font-weight: 500;
+                height: 30px;
+            }
+        }
+        section:nth-child(3){
+            @include grid-areas(2, 3, 4, 5, center, center);
+            height: 350px;
+            justify-self: center;
+            
+            iframe{
+                height: 350px;
+                width: 350px;
+                
+            }
+            
+        }
+        section:nth-child(4){
+            @include grid-areas(2, 3, 2, 5, center, center);
+            
+        }  
+    }
+    
+}
+
+@media(max-width:391px){
+    .ubicacion{
+        @include grid((40px 19.375rem 40px),(40px 80px 270px 400px 40px), center, center);
+        height: 100%;
+        width: 100%;
+        section:nth-child(1){
+            @include grid-areas(2, 3, 2, 3, center, center);
+            height: 100%;
+            width: 100%;
+        }
+        section:nth-child(2){
+            @include grid-areas(2, 3, 3, 4, center, center);
+            height: 16.875rem;
+            width: 100%;
+            justify-items: center;
+            h5{
+                font-weight: 500;
+                height: 30px;
+            }
+        }
+        section:nth-child(3){
+            @include grid-areas(2, 3, 4, 5, center, center);
+            height: 18.75rem;
+            width: 18.75rem;
+            justify-self: center;
+            margin: 0;
+            border: 4px black solid;
+            
+            iframe{
+                height: 300px;
+                width: 300px;
+                
+                
+            }
+            
+        }
+        section:nth-child(4){
+            @include grid-areas(2, 3, 2, 5, center, center);
+            
+        }  
+    }
+    
 }
