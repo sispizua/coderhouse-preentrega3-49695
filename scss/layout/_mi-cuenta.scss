@@ -1,0 +1,48 @@
+.mi-cuenta{
+    @include grid((1.2fr 1fr 1.2fr ),(0.5fr .6fr 1fr .8fr 0.5fr), center, center);
+    height: 100%;
+    width: 100%;
+    section:nth-child(1){
+        @include grid-areas(2, 3, 2, 3, center, center);
+        order: 2;
+    }
+    section:nth-child(2){
+        @include grid-areas(2, 3, 3, 4, center, center);
+        order: 2;
+        gap: .3125rem;
+        form{
+            @include flex( column, center, center, .9375rem);
+            width: 240px;
+        }
+    }
+    section:nth-child(3){
+        @include grid-areas(2, 3, 4, 5, center, center);
+        order: 2;
+        button{
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            font-size: 80%;
+            background-color: #292A2E;
+            color: white;
+            padding: 10px 10px;
+            border: .25rem solid #5F6F52;
+            border-radius: .25rem;
+            height: 2.9375rem;
+            width: 7.5rem; 
+        }
+    }
+    section:nth-child(4){
+        @include grid-areas(2, 3, 2, 5, center, center);
+        background-color: #ffffff92;
+        order: 1;
+    }
+}
+
+@media(max-width:769px){
+    .mi-cuenta{
+        @include grid((.8fr 1fr .8fr ),(0.3fr .5fr 1fr .5fr 0.3fr), center, center);
+    height: 100%;
+    width: 100%;
+
+    }
+}
