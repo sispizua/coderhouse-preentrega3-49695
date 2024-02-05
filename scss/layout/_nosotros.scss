@@ -76,6 +76,28 @@
     }
     }
 }
+@media (max-width:681px){
+    .nosotros{
+        @include grid((0.3fr 1fr 0.3fr),(40px 270px 270px 400px 40px), center, center);
+    }
+}
+@media (max-width:507px){
+    .nosotros{
+        @include grid((0.3fr 1fr 0.3fr),(40px 300px 300px 400px 40px), center, center);
+    }
+}
+@media (max-width:482px){
+    .nosotros{
+        @include grid((0.3fr 1fr 0.3fr),(40px 320px 300px 400px 40px), center, center);
+    img{
+        height: 19.875rem;
+        width: 15.625rem;
+        padding: 0 .625rem 0 .625rem;
+
+    }
+    }
+
+}
 @media (max-width:391px){
     .nosotros{
         @include grid((0.3fr 1fr 0.3fr),(40px 300px 300px 400px 40px), center, center);
@@ -86,11 +108,7 @@
         h3:nth-child(2){
             height: 100%;
         }
-        img{
-            height: 19.125rem;
-            width: 15rem;
-            padding: 0 20px 0 20px;
-        }
+        
     }
 
 }
