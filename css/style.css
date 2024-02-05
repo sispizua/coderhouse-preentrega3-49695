@@ -76,7 +76,7 @@ font-family: 'Poppins', sans-serif;
     .header nav ul li a {
       font-size: 1rem; } }
 
-@media (max-width: 391px) {
+@media (max-width: 603px) {
   .header {
     height: 2.5rem;
     display: flex;
@@ -128,10 +128,42 @@ font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: white; }
 
+@media (max-width: 705px) {
+  .principal button {
+    margin-right: 3.75rem; } }
+
+@media (max-width: 688px) {
+  .principal button {
+    margin-right: 3.125rem; } }
+
+@media (max-width: 640px) {
+  .principal button {
+    margin-right: 2.5rem; } }
+
+@media (max-width: 595px) {
+  .principal button {
+    margin-right: 1.875rem; } }
+
+@media (max-width: 515px) {
+  .principal {
+    height: 37.5rem; }
+    .principal button {
+      margin-right: 1.875rem; } }
+
+@media (max-width: 514px) {
+  .principal {
+    height: 37.5rem;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 0; }
+    .principal button {
+      margin-right: 1.25rem; } }
+
 @media (max-width: 391px) {
   .principal {
     background-position: center;
-    background-size: 100%;
+    background-size: 37.5rem;
     background-repeat: no-repeat;
     height: 25rem;
     width: 100%; }
