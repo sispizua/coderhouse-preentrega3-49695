@@ -58,8 +58,15 @@
         }
     
     
+   
+        
+@media(max-width:1055px){
+    .cards{
+        padding: .625rem 0 .625rem 0;
 
-@media(max-width:768px){
+}
+}
+@media(max-width:835px){
     .cards{
         @include flex(column, center, center, 3.125rem);
         padding-top: 2.5rem;

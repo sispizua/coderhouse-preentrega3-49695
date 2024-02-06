@@ -44,7 +44,8 @@
         background-color: #ffffff92;
     }
 }
-@media(max-width:769px){
+
+@media(max-width:960px){
     .ubicacion{
         @include grid((84px 600px 84px),(40px 80px 380px 400px 40px), center, none);
         height: 100%;
@@ -84,7 +85,7 @@
     
 }
 
-@media(max-width:391px){
+@media(max-width:600px){
     .ubicacion{
         @include grid((40px 19.375rem 40px),(40px 80px 270px 400px 40px), center, center);
         height: 100%;
@@ -110,7 +111,6 @@
             width: 18.75rem;
             justify-self: center;
             margin: 0;
-            border: 4px black solid;
             
             iframe{
                 height: 300px;

@@ -21,7 +21,7 @@ footer{
   
 }
 
-@media(max-width:768px){
+@media(max-width:900px){
     footer{
         height: 100%;
         @include grid(repeat(3, 1fr), repeat(2, 1fr), center, center);
@@ -47,7 +47,7 @@ footer{
     }
 }
 
-@media(max-width:391px){
+@media(max-width:700px){
     footer{
         display: flex;
         flex-direction: column;
