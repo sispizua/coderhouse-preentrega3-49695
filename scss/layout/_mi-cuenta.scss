@@ -22,10 +22,10 @@
             font-family: 'Poppins', sans-serif;
             text-decoration: none;
             font-size: 80%;
-            background-color: #292A2E;
+            background-color: $color3;
             color: white;
             padding: 10px 10px;
-            border: .25rem solid #5F6F52;
+            border: .25rem solid $color2;
             border-radius: .25rem;
             height: 2.9375rem;
             width: 7.5rem; 
@@ -33,7 +33,7 @@
     }
     section:nth-child(4){
         @include grid-areas(2, 3, 2, 5, center, center);
-        background-color: #ffffff92;
+        background-color: $color4;
         order: 1;
     }
 }

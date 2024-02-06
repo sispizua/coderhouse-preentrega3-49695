@@ -44,7 +44,7 @@
     
     section{
         @include grid-areas( 2 , 7, 2 , 4, center, center);
-            background-color: #ffffff92;
+            background-color: $color4;
             order: 1;
             height: 100%;
             width: 100%;
